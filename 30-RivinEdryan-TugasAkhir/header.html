@@ -5,132 +5,46 @@
 </head>
 <style>
 	
-		.button1 {
-			box-shadow:inset 0px 1px 0px 0px #f29c93;
-			background:linear-gradient(to bottom, #fe1a00 5%, #ce0100 100%);
-			background-color:#fe1a00;
-			border-radius:6px;
-			border:1px solid #d83526;
-			display:inline-block;
-			cursor:pointer;
-			color:#ffffff;
-			font-family:Arial;
-			font-size:15px;
-			font-weight:bold;
-			padding:6px 24px;
-			text-decoration:none;
-			text-shadow:0px 1px 0px #b23e35;
-		}
-		.button1:hover {
-			background:linear-gradient(to bottom, #ce0100 5%, #fe1a00 100%);
-			background-color:#ce0100;
-		}
-		.button1:active {
-			position:relative;
-			top:1px;
-		}
+    .button1 {
+      display: inline-block;
+      padding: 12px 25px; 
+      font-size: 20px;
+      font-family: 'Poppins', sans-serif;
+      text-decoration: none;
+      color: #fff;
+      position: relative;
+      overflow: hidden;
+      z-index: 1;
+      background: linear-gradient(to right, #e67e22, #f39c12);
+      border: none;
+      border-radius: 8px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      transition: background 0.3s, transform 0.3s;
+    }
 
-		.button2 {
-			box-shadow:inset 0px 1px 0px 0px #f29c93;
-			background:linear-gradient(to bottom, #fe1a00 5%, #ce0100 100%);
-			background-color:#fe1a00;
-			border-radius:6px;
-			border:1px solid #d83526;
-			display:inline-block;
-			cursor:pointer;
-			color:#ffffff;
-			font-family:Arial;
-			font-size:15px;
-			font-weight:bold;
-			padding:6px 24px;
-			text-decoration:none;
-			text-shadow:0px 1px 0px #b23e35;
-		}
-		.button2:hover {
-			background:linear-gradient(to bottom, #ce0100 5%, #fe1a00 100%);
-			background-color:#ce0100;
-		}
-		.button2:active {
-			position:relative;
-			top:1px;
-		}
 
-       
-		.button3 {
-			box-shadow:inset 0px 1px 0px 0px #f29c93;
-			background:linear-gradient(to bottom, #fe1a00 5%, #ce0100 100%);
-			background-color:#fe1a00;
-			border-radius:6px;
-			border:1px solid #d83526;
-			display:inline-block;
-			cursor:pointer;
-			color:#ffffff;
-			font-family:Arial;
-			font-size:15px;
-			font-weight:bold;
-			padding:6px 24px;
-			text-decoration:none;
-			text-shadow:0px 1px 0px #b23e35;
-		}
-		.button3:hover {
-			background:linear-gradient(to bottom, #ce0100 5%, #fe1a00 100%);
-			background-color:#ce0100;
-		}
-		.button3:active {
-			position:relative;
-			top:1px;
-		} 
+    .button1::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      z-index: -1;
+      background: linear-gradient(to right, #d35400, #e67e22);
+      transform: scaleX(0); 
+      transform-origin: left;
+      transition: transform 0.3s;
+    }
 
-				.button4 {
-			box-shadow:inset 0px 1px 0px 0px #f29c93;
-			background:linear-gradient(to bottom, #fe1a00 5%, #ce0100 100%);
-			background-color:#fe1a00;
-			border-radius:6px;
-			border:1px solid #d83526;
-			display:inline-block;
-			cursor:pointer;
-			color:#ffffff;
-			font-family:Arial;
-			font-size:15px;
-			font-weight:bold;
-			padding:6px 24px;
-			text-decoration:none;
-			text-shadow:0px 1px 0px #b23e35;
-		}
-		.button4:hover {
-			background:linear-gradient(to bottom, #ce0100 5%, #fe1a00 100%);
-			background-color:#ce0100;
-		}
-		.button4:active {
-			position:relative;
-			top:1px;
-		} 
 
-				.button5 {
-			box-shadow:inset 0px 1px 0px 0px #f29c93;
-			background:linear-gradient(to bottom, #fe1a00 5%, #ce0100 100%);
-			background-color:#fe1a00;
-			border-radius:6px;
-			border:1px solid #d83526;
-			display:inline-block;
-			cursor:pointer;
-			color:#ffffff;
-			font-family:Arial;
-			font-size:15px;
-			font-weight:bold;
-			padding:6px 24px;
-			text-decoration:none;
-			text-shadow:0px 1px 0px #b23e35;
-		}
-		.button5:hover {
-			background:linear-gradient(to bottom, #ce0100 5%, #fe1a00 100%);
-			background-color:#ce0100;
-		}
-		.button5:active {
-			position:relative;
-			top:1px;
-		} 
+    .button1:hover {
+      transform: scale(1.1);
+    }
 
+    .button1:hover::before {
+      transform: scaleX(1.3);
+    }
         
     .tengahtabel {
   margin-left: auto;
@@ -139,26 +53,61 @@
 
         
 
+  @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700;900&display=swap');
+
+    .headerbackground {
+      background: linear-gradient(to right, #f1c40f, #f39c12);
+      padding: 20px;
+      color: #fff;
+      text-align: center;
+      font-family: 'Poppins', sans-serif;
+      position: relative;
+      overflow: hidden;
+    }
+
+
+    .headerbackground::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: linear-gradient(to right, #e74c3c, #f39c12, #f1c40f, #2ecc71);
+      z-index: -1;
+      animation: gradientAnimation 10s infinite linear; 
+    }
+
+    @keyframes gradientAnimation {
+      0% {
+        background-position: 100% 0%;
+      }
+      100% {
+        background-position: -100% 0%;
+      }
+    }
+
+
 </style>
 
 
 <body>
 
-<table>
+<table class="tengahtabel headerbackground" width="100%">
 	<tr>
 		<td>
+			<marquee><font style="font-family: Poppins; font-weight: 900; font-size: 56px;">Shoppedia</font></marquee>
+		</td>
+	</tr>
 
-<marquee><h1>Shoppedia</h1></marquee><br>
-<marquee><h3>Shopping More Smart, Cheap and Efficient</h3></marquee>
-
-<a href="" class="button5" target="content">Home</a>
-<a href="kaos.html" class="button1" target="content">Baju</a>
-<a href="" class="button2" target="content">Celana</a>
-<a href="" class="button3" target="content">Sepatu</a>
-
-
-</td>
-</tr>
+	<tr>
+		<td>
+			<a href="" class="button1 tengahtabel" target="content">Home</a>
+			<a href="kaos.html" class="button1 tengahtabel" target="content">Baju</a>
+			<a href="" class="button1 tengahtabel" target="content">Celana</a>
+			<a href="" class="button1 tengahtabel" target="content">Sepatu</a>
+		</td>
+	</tr>
 </table>
 
 </body>

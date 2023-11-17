@@ -6,60 +6,90 @@
     <title>Document</title>
 </head>
 <style>
-    .kaos {
-	box-shadow:inset 0px 1px 0px 0px #fff6af;
-	background:linear-gradient(to bottom, #ffec64 5%, #ffab23 100%);
-	background-color:#ffec64;
-	border-radius:6px;
-	border:1px solid #ffaa22;
-	display:inline-block;
-	cursor:pointer;
-	color:#333333;
-	font-family:Arial;
-	font-size:12px;
-	font-weight:bold;
-	padding:6px 24px;
-	text-decoration:none;
-	text-shadow:0px 1px 0px #ffee66;
+
+.navigasi {
+  display: inline-block;
+  padding: 8px 50px;
+  font-size: 16px;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+  border: 2px solid #ffa31d;
+  color: #ffa31d; 
+  background-color: transparent;
+  border-radius: 20px;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
-.kaos:hover {
-	background:linear-gradient(to bottom, #ffab23 5%, #ffec64 100%);
-	background-color:#ffab23;
+
+.navigasi:hover {
+  transform: scale(1.1);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  background-color: #fc8403;
+  color: #fff; 
+  border-color: #ef5454;
 }
-.kaos:active {
-	position:relative;
-	top:1px;
-}
+
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@500;800&family=Outfit:wght@900&family=Quicksand:wght@500&display=swap');
+
+    .font-kanit {
+      font-family: 'Kanit', sans-serif;
+      font-weight: 800;
+      font-size: 12px;
+    }
+
+    .font-outfit {
+      font-family: 'Outfit', sans-serif;
+      font-weight: 900;
+      font-size: 20px;
+    }
+
+    .font-quicksand {
+      font-family: 'Quicksand', sans-serif;
+      font-weight: 500;
+      font-size: 8px;
+    }
+ 
+ .tengahtabel{
+    margin-left:auto;
+    margin-right:auto;
+ }
 
         
 </style>
 <body>
     
+    <table class="tengahtabel">
+        <tr class="font-outfit">
+            <td>
     <h2>Baju</h2>
-<table>
+            </td>
+        </tr>
+
     <tr>
         <td>
-            <a href="kaos.html" class="kaos" target="content">Kaos</a>
+            <a href="kaos.html" class="navigasi font-kanit" target="content">KAOS</a>
         </td>
     </tr>
 
     <tr>
         <td>
-            <a href="kemeja.html" class="kaos" target="content">Kemeja</a>
+            <a href="kemeja.html" class="navigasi font-kanit" target="content">KEMEJA</a>
         </td>
     </tr>
 
     <tr>
         <td>
-            <a href="kaos.html" class="kaos" target="content">Kaos</a>
+            <a href="kaos.html" class="navigasi font-kanit" target="content">HOODIE</a>
         </td>
     </tr>
 
     <tr>
         <td>
-            <a href="kaos.html" class="kaos" target="content">Kaos</a>
+            <a href="kaos.html" class="navigasi font-kanit" target="content">JACKET</a>
         </td>
     </tr>
 </table>
 </body>
 </html>
+
